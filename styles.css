@@ -1,10 +1,10 @@
 /* General styles */
 body {
     font-family: 'Arial', sans-serif;
-    margin: 10;
+    margin: 40px;
     padding: 0;
-    background-color: #276783; 
-    color: #333; 
+    background-color: #73b5d1; 
+    color: #e09d0d; 
     text-align:center;
 
   }
@@ -64,18 +64,60 @@ body {
     cursor: pointer;
     font-size: 1em;
     transition: background-color 0.3s ease;
+    margin-bottom: 100px;
   }
 
-  .dropbtn {
-    background-color: #ff5733; /* A vibrant orange */
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    padding: 12px 20px;
-    border-radius: 8px; /* Rounded corners */
-    border: 2px solid #ff4500; /* Orange border */
-    cursor: pointer;
-  }
+/* Style the main dropdown button */
+.dropbtn {
+  background-color: #4CAF50; /* Green background */
+  color: white;             /* White text */
+  padding: 10px 20px;       /* Padding */
+  font-size: 16px;          /* Font size */
+  border: black;             /* No border */
+  cursor: pointer;          /* Pointer on hover */
+  border-radius: 4px;       /* Rounded corners */
+  margin-bottom: 100px;
+
+}
+
+/* Style the container */
+.dropdown {
+  position: relative;       /* Position relative for dropdown alignment */
+  display: inline-block;    /* Inline-block for layout */
+}
+
+/* Dropdown menu items */
+.dropdown-content {
+  display: none;            /* Hidden by default */
+  position: absolute;       /* Positioned under the button */
+  background-color: #f9f9f9; /* Light gray background */
+  min-width: 160px;         /* Minimum width */
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Shadow */
+  z-index: 1;               /* Layer above other elements */
+}
+
+/* Style each item */
+.dropdown-content a {
+  color: black;             /* Black text */
+  padding: 20px 16px;       /* Padding */
+  text-decoration: none;    /* No underline */
+  display: block;           /* Block display */
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Highlight items on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;   /* Light gray */
+}
+
+/* Main button hover effect */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41; /* Darker green */
+}
   
   button:hover {
     background-color: #004C99; /* Darker blue on hover */
