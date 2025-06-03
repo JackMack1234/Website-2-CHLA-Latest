@@ -136,3 +136,27 @@ footer {
     gap: 32px;
     padding: 8px;
 }
+
+h1 {
+    font-size: 48px; 
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+    padding: 16px 0;
+  }
+  .header-menu li {
+    width: 100%;
+    text-align: center;
+  }
+  .header-menu a {
+    font-size: 1.1rem;
+    padding: 8px 0;
+    display: block;
+    word-break: break-word;
+  }
+}
