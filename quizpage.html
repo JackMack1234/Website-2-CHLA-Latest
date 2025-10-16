@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Canterbury Quiz</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      /* small page-specific tweaks */
+      .quiz-container { max-width:700px; margin:2rem auto; padding:1.5rem; background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,.08); }
+      .choices { list-style:none; padding:0; margin:1rem 0; }
+      .choices button { display:block; width:100%; text-align:left; padding:.75rem 1rem; margin-bottom:.5rem; border:1px solid #ddd; border-radius:6px; background:#f8f8f8; cursor:pointer; }
+      .choices button.selected { background:#e0f0ff; border-color:#7fbfff; }
+      .controls { display:flex; gap:0.5rem; margin-top:1rem; }
+      .hidden { display:none; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="header-menu nav-menu">
+          <li class="header-menu-item"><a href="./index.html" class="nav-link">Home</a></li>
+          <li class="header-menu-item"><a href="./about.html" class="nav-link">About Canterbury</a></li>
+          <li class="header-menu-item"><a href="./places.html" class="nav-link">Places</a></li>
+          <li class="header-menu-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+          <li class="header-menu-item"><a href="./quizpage.html" class="nav-link">Quiz</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="quiz-container" aria-live="polite">
+        <h1>Canterbury Quiz</h1>
+
+        <div id="quiz">
+          <div id="questionArea">
+            <h2 id="question">Question text</h2>
+            <ul id="choices" class="choices" role="list"></ul>
+          </div>
+
+          <div class="controls">
+            <button id="nextBtn">Next</button>
+            <button id="restartBtn" class="hidden">Restart</button>
+            <div id="progress" style="margin-left:auto; align-self:center;">0 / 0</div>
+          </div>
+
+          <div id="result" class="hidden" style="margin-top:1rem;"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Copyright © 2025 My Company</p>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/sitemap">Sitemap</a>
+    </footer>
+
+    <script defer src="./scripts/quiz.js"></script>
+  </body>
+</html>
